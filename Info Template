@@ -1,0 +1,111 @@
+/*
+The following is the template you'll need to fill out with all your info to add it to the HackersEncyclopedia database. 
+Note: you only need to change what's been put in brackets []. Use cmd/ctrl+f to find "[" and make it easier to see what you need to change.
+Remember your player info can be found below your name neside your rep by pressing the [i] icon.
+Alternatively you can send me a screenshot of your player info and all your programs and I'll add the info in myself, but this process
+may prove much slower as I'll be busy working on the bot.
+*/
+
+//Copy from the following "if" onward (lines 11 - 57):
+
+if (command === prefix + "info TheLurkingRage" || command === prefix + "info TLR") {
+      var embed = new Discord.RichEmbed()
+        .setColor(0xffa200)
+        .setTitle("Player Stats:")
+        .addField("```Player ID:```", "[player ID]", true)
+        .addField("```Player Level:```", "[player level]", true)
+        .addField("```Rep Rank:```", "[Rep Rank]", false)
+        .addField("```Current Leaderboard Rank:```", "[leaderboard rank]", true)
+        .addField("```Highest Leaderboard Rank Achieved:```", "[highest leaderboard rank schieved]", true)
+        .addField("```Current Rep:```", "≈[current rep, if it fluctuates a lot please note so and give an estimated range]", true)
+        .addField("```Experience:```", "≈[Player experience are what determine your level]", true)
+        .addField("```Hacks:```", "**Successful:** ≈[amount succeeded]\n**Failed:** [times failed]", true)
+        .addField("```Defenses:```", "**Successful:** [successful amount]\n**Failed:** [failed amount]", true)
+        .addField("```Offense Win Rate:```", "[percentage goes here%]", true)
+        .addField("```Defense Win Rate:```", "[percentage goes here%]", true)
+        .addField("```Resources Looted:```", "**Money:** ≈$2.4 [Money amount]\n**B-Coins:** ≈₿[B-Coins amount]", true)
+        .addField("```Resources Collected:```", "**Money:** ≈$[Money amount]\n**B-Coins:** ≈₿[B-Coins amount]", true)
+        .addField("```Discord Member:```", "[Yes/No]", true)
+        .addField("```Discord tag:```", "<@![ID GOES HERE]>", true)
+        .setFooter("Player info last updated [Month-Day-Year]")
+        .setThumbnail("https://i.imgur.com/QtGh7gi.png")
+    respond.send({embed});
+
+    var embed = new Discord.RichEmbed()
+        .setColor(0xffa200)
+        .addField("⁣ ", " ⁣", true)
+        .addField("```Beam Cannon:```", "[level]", true)
+        .addField("⁣ ", " ⁣", true)
+        .setTitle("Program Levels:")
+        .addField("ICE Wall", "[level]", true)
+        .addField("Shuriken", "[level]", true)
+        .addField("Data Leech", "[level]", true)
+        .addField("Protector", "[level]", true)
+        .addField("Blaster", "[level]", true)
+        .addField("Worms", "[level]", true)
+        .addField("Shocker", "[level]", true)
+        .addField("Battering Ram", "[level]", true)
+        .addField("Kraken", "[level]", true)
+        .addField("Access", "[level]", true)
+        .addField("Wraith", "[level]", true)
+        .addField("Portal", "[level]", true)
+        .addField("⁣ ", " ⁣", true)
+        .addField("Maniac", "[level]", true)
+        .addField("⁣ ", " ⁣", true)
+        .setFooter("Player info last updated Month-Day-Year")
+    respond.send({embed});
+} else
+
+//end copy on "} else" (line 57)
+
+/*
+The following is an example of how the template should look once you fill it up:
+*/
+
+if (command === prefix + "info TheLurkingRage" || command === prefix + "info TLR") {
+      var embed = new Discord.RichEmbed()
+        .setColor(0xffa200)
+        .setTitle("Player Stats:")
+        .addField("```Player ID:```", "TheLurkingRage", true)
+        .addField("```Player Level:```", "83", true)
+        .addField("```Rep Rank:```", "Elite", false)
+        .addField("```Current Leaderboard Rank:```", "7th", true)
+        .addField("```Highest Leaderboard Rank Achieved:```", "#1", true)
+        .addField("```Current Rep:```", "≈3.1k", true)
+        .addField("```Experience:```", "≈606k", true)
+        .addField("```Hacks:```", "**Successful:** ≈3.9k\n**Failed:** 290", true)
+        .addField("```Defenses:```", "**Successful:** 508\n**Failed:** 440", true)
+        .addField("```Offense Win Rate:```", "93%", true)
+        .addField("```Defense Win Rate:```", "54%", true)
+        .addField("```Resources Looted:```", "**Money:** ≈$2.4 Billion\n**B-Coins:** ≈₿76 Million", true)
+        .addField("```Resources Collected:```", "**Money:** ≈$29 Million\n**B-Coins:** ≈₿1.6 Million", true)
+        .addField("```Discord Member:```", "Yes", true)
+        .addField("```Discord tag:```", "<@!297470136477155329>", true)
+        .setFooter("Player info last updated Dec-23-2017")
+        .setThumbnail("https://i.imgur.com/QtGh7gi.png")
+    respond.send({embed});
+
+    var embed = new Discord.RichEmbed()
+        .setColor(0xffa200)
+        .addField("⁣ ", " ⁣", true)
+        .addField("```Beam Cannon:```", "12", true)
+        .addField("⁣ ", " ⁣", true)
+        .setTitle("Program Levels:")
+        .addField("ICE Wall", "11", true)
+        .addField("Shuriken", "21", true)
+        .addField("Data Leech", "8", true)
+        .addField("Protector", "13", true)
+        .addField("Blaster", "20", true)
+        .addField("Worms", "8", true)
+        .addField("Shocker", "20", true)
+        .addField("Battering Ram", "21", true)
+        .addField("Kraken", "5", true)
+        .addField("Access", "14", true)
+        .addField("Wraith", "15", true)
+        .addField("Portal", "9", true)
+        .addField("⁣ ", " ⁣", true)
+        .addField("Maniac", "1", true)
+        .addField("⁣ ", " ⁣", true)
+        .setFooter("Player info last updated Dec-23-2017")
+    respond.send({embed});
+} else
